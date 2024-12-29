@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:paddingVertical="6dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_chat_item_left"
+    android:elevation="2dp"
+    android:gravity="end">
+
+    <!-- Message du chat -->
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salut mon frère"
+        android:textColor="#323232"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp" />
+
+    <!-- Heure d'envoi -->
+    <TextView
+        android:id="@+id/tvHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:32"
+        android:textColor="#757575"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

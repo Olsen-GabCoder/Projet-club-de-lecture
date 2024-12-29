@@ -1,0 +1,16 @@
+<resources>
+    <style name="Base.Theme.RollEaters" parent="Theme.Material3.DayNight">
+        <!-- Couleurs personnalisées -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/button_blue</item>
+    </style>
+    <style name="Theme.RollEaters" parent="Base.Theme.RollEaters" />
+    <style name="Base.Theme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Couleurs personnalisées -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/button_blue</item>
+    </style>
+
+    <!-- Thème pour l'application -->
+    <style name="Theme.NoActionBar" parent="Base.Theme.NoActionBar" />
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "214835332190",
+    "project_id": "books-ac5ad",
+    "storage_bucket": "books-ac5ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214835332190:android:286a9a14d97698273a20cf",
+        "android_client_info": {
+          "package_name": "tn.esprit.rolleaters"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnbvdWpu3G7rDD4v6nJx8_ynRom74hj38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:backgroundColor="#D0FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:padding="10dp">
+
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvShortName"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            tools:tect="N"
+            android:gravity="center"
+            android:background="@drawable/bg_round"
+            android:text="O"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_toEndOf="@+id/tvShortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            tools:tect="N"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:lines="1"
+            android:text="Olsen Kampala"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDark" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

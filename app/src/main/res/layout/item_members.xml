@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginVertical="1dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#D0ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp"
+        android:layout_height="65dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivFriend"
+            android:layout_width="50dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/avatar1"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivFriend"
+            tools:text="Olsen kampala"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:lines="1"
+            android:textColor="@color/primaryDark"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/lastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/ivFriend"
+            tools:text="Salut"
+            android:textSize="14sp"
+            android:lines="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tvHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            tools:text="15:00"
+            android:textSize="12sp"
+            android:lines="1"
+            android:layout_marginStart="20dp" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

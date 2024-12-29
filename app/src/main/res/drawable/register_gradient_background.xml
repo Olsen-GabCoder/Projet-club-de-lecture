@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- État par défaut avec un dégradé -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="45"
+                android:startColor="#18b192"
+            android:endColor="#020024"
+            android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Exemple : état pressé avec un gradient différent -->
+    <item android:state_pressed="true">
+        <shape>
+            <gradient
+                android:angle="45"
+                android:startColor="#388E3C"
+            android:endColor="#1976D2"
+            android:type="linear" />
+        </shape>
+    </item>
+</selector>

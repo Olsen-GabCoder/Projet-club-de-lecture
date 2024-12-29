@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <!-- Titre "Connexion" avec un style amélioré -->
+    <TextView
+        android:id="@+id/registerTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:textColor="#1A237E"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:letterSpacing="0.5"
+        android:shadowColor="#AA000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />
+
+    <!-- Champ Nom d'utilisateur -->
+    <EditText
+        android:id="@+id/loginUsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/simple_edittext"
+        android:hint="Nom d'utilisateur"
+        android:textColor="#1A237E"
+        android:inputType="textPersonName" />
+
+    <!-- Champ de mot de passe avec icône œil à l'intérieur -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/loginPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/simple_edittext"
+            android:hint="Mot de passe"
+            android:textColor="#1A237E"
+            android:inputType="textPassword"
+            android:paddingEnd="50dp"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/showPasswordIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_eye"
+            android:contentDescription="Afficher/Masquer mot de passe"
+            app:tint="#1A237E"
+            android:layout_marginTop="5dp" />  <!-- Ajuster la position verticale de l'icône -->
+    </RelativeLayout>
+
+    <!-- Bouton Se connecter -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/simple_edittext"
+        android:text="Se connecter"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- Bouton Créer un compte -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/simple_edittext"
+        android:text="Créer un compte"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+</LinearLayout>

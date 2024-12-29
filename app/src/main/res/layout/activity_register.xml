@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Titre "Inscription" avec style amélioré -->
+    <TextView
+        android:id="@+id/registerTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        android:textColor="#1A237E"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginBottom="32dp"
+    android:letterSpacing="0.5"
+    android:shadowColor="#AA000000"
+    android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowRadius="3" />
+
+    <!-- Champ Nom d'utilisateur -->
+    <EditText
+        android:id="@+id/registerUsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/simple_edittext"
+        android:layout_marginBottom="16dp"
+    android:hint="Nom d'utilisateur"
+    android:textColor="#1A237E"
+    android:inputType="textPersonName" />
+
+    <!-- Champ Adresse e-mail -->
+    <EditText
+        android:id="@+id/registerEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse e-mail"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+    android:background="@drawable/simple_edittext"
+    android:textColor="#1A237E"
+    android:inputType="textEmailAddress" />
+
+    <!-- Champ Mot de passe -->
+    <EditText
+        android:id="@+id/registerPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+    android:background="@drawable/simple_edittext"
+    android:hint="Mot de passe"
+    android:textColor="#1A237E"
+    android:inputType="textPassword" />
+
+    <!-- Champ Confirmer le mot de passe -->
+    <EditText
+        android:id="@+id/registerConfirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+    android:background="@drawable/simple_edittext"
+    android:hint="Confirmer le mot de passe"
+    android:textColor="#1A237E"
+    android:inputType="textPassword" />
+
+    <!-- Bouton S'inscrire avec texte amélioré -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S'inscrire"
+        android:background="@drawable/simple_button"
+        android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:layout_marginBottom="32dp"
+    android:textSize="16sp" />
+
+</LinearLayout>

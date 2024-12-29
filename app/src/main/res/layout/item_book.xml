@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Image de couverture -->
+        <ImageView
+            android:id="@+id/bookCover"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_book_cover"
+            android:contentDescription="Couverture du livre"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rounded_image_border" />
+
+        <!-- Informations sur le livre et boutons -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/bookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L'alchimiste"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/bookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paulo Coelho"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="italic"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/bookPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="253 pages"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <!-- Boutons disposés verticalement -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <!-- Bouton pour ouvrir le PDF -->
+            <Button
+                android:id="@+id/openPdfButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ouvrir PDF"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp"
+                android:textSize="12sp" />
+
+            <!-- Bouton pour supprimer -->
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supprimer"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

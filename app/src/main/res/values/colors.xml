@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="primary">#6200EE</color>
+    <color name="secondary">#03DAC5</color>
+    <color name="gray">#B0BEC5</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="background">#F5F5F5</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="primaryLight">#BB86FC</color>
+    <color name="primaryDark">#303F9F</color>
+    <color name="lightGray">#D3D3D3</color>
+    <color name="primaryColor">#6200EE</color>
+    <color name="secondaryColor">#03DAC6</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#808080</color>
+    <color name="white">#FFFFFF</color>
+        <color name="shadowColor">#80000000</color>
+        <color name="backgroundColor">#FFFFFF</color>
+        <color name="button_blue">#2196F3</color>
+        <color name="button_text_color">#FFFFFF</color>
+        <color name="title_color">#4CAF50</color>
+        <color name="hint_text_color">#B0BEC5</color>
+        <color name="primaryTextColor">#333333</color>
+        <color name="hintTextColor">#9E9E9E</color>
+        <color name="iconTintColor">#757575</color>
+    <color name="colorLight">#F5F5F5</color>
+
+
+</resources>

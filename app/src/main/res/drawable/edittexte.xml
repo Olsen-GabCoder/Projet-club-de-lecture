@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- État par défaut -->
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+            <corners android:radius="16dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/gray" />
+        </shape>
+    </item>
+
+    <!-- État quand l'EditText est en focus -->
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="@color/white" />
+            <corners android:radius="16dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/primaryColor" />
+        </shape>
+    </item>
+</selector>

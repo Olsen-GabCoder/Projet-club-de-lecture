@@ -1,0 +1,218 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    tools:context=".activities.EventsActivity"
+    android:padding="16dp">
+
+    <!-- Section : Présentation de l'œuvre du mois -->
+    <LinearLayout
+        android:id="@+id/workSection"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/rounded_card_background"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/workImage"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/etranger"
+                android:scaleType="centerCrop"
+                android:contentDescription="Image du livre"
+                android:background="@drawable/rounded_image_border"
+                android:elevation="2dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/workTitleOverlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Le Livre du Mois : L'Étranger"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"
+                    android:ellipsize="end"
+                    android:maxLines="2" />
+
+                <TextView
+                    android:id="@+id/workAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auteur : Albert Camus"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#424242" />
+
+                <TextView
+                    android:id="@+id/workPages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de pages : 200"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#424242" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Section : Timers côte à côte -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <!-- Section : Temps restant pour l'analyse -->
+        <LinearLayout
+            android:id="@+id/analysisSection"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@drawable/rounded_card_background"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/analysisRemainingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temps restant pour l'analyse : 5 jours"
+                android:textSize="20sp"
+                android:textColor="#1565C0"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <!-- ProgressBar horizontale avec le pourcentage -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <ProgressBar
+                    android:id="@+id/analysisProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:progress="70"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_horizontal_style"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/analysisProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70%"
+                    android:textSize="16sp"
+                    android:textColor="#1565C0"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Section : Temps restant pour le débat -->
+        <LinearLayout
+            android:id="@+id/debateSection"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@drawable/rounded_card_background"
+            android:elevation="4dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/debateRemainingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temps restant pour le débat : 10 jours"
+                android:textSize="20sp"
+                android:textColor="#E64A19"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <!-- ProgressBar horizontale avec le pourcentage -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <ProgressBar
+                    android:id="@+id/debateProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:progress="50"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_horizontal_style"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/debateProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%"
+                    android:textSize="16sp"
+                    android:textColor="#E64A19"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Section : Calendrier des événements -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/calendarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendrier des événements"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CalendarView pour afficher le calendrier -->
+        <android.widget.CalendarView
+            android:id="@+id/eventCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showWeekNumber="false"
+            android:firstDayOfWeek="1" />
+    </LinearLayout>
+
+</LinearLayout>
